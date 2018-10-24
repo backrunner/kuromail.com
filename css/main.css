@@ -57,11 +57,13 @@ body{
 }
 #main-logo{
     width: 350px;
+    user-select: none;
+    -webkit-user-drag: none !important;
 }
 /* Right */
 .login-panel{
     width:auto;
-    margin-top:200px;
+    margin-top:230px;
 }
 .login-form{
     user-select: none;
@@ -79,7 +81,7 @@ body{
 }
 .login-tabs-item{
     display:block;
-    text-align: center;    
+    text-align: center;
 }
 .login-tabs-item span{
     font-size: 18px;
@@ -90,30 +92,24 @@ body{
 }
 .login-tab{
     margin-top:36px;
+    display:none;
+}
+.login-tab-display{
+    display:block;
 }
 .control-layer{
     margin-bottom:15px;
 }
 .control-layer label{
     color:white;
-    font-size:18px;
+    font-size:16px;
 }
 .control-layer input{
     width: 420px;
 }
-.autologin_choice{
-    color:white;
-    font-size:16px;
-    padding-top: 8px;
-}
-.autologin_choice input{
-    margin-right:6px;
-}
-.login-btn-layer{
-    margin-top:14px;
-}
-.login-btn-layer button{
+.login-submit-layer input{
     width: 420px;
+    margin-top:12px;
 }
 .forgetpassword-layer{
     margin-top:24px;
@@ -124,4 +120,13 @@ body{
 }
 .forgetpassword-layer  a:hover{
     color:white;
+}
+#input-username{
+    display: inline-block;
+    width:286px;
+}
+#username-postfix{
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 8px;
 }
