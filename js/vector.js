@@ -28,17 +28,17 @@ e.c.position[1]),this.context.closePath(),this.context.strokeStyle=f,this.contex
 function Victor(container, anitOut){
 	if (!!document.createElement("canvas").getContext) {
 		var t = {
-			width: 1.5,
+			width: 0.5 + 1920 / (window.innerWidth * 1.1),
 			height: 1.5,
 			depth: 10,
 			segments: 12,
-			slices: 7,
-			xRange: 0.4,
-			yRange: 0.2,
+			slices: 6,
+			xRange: 0.8,
+			yRange: 0.1,
 			zRange: 1,
 			ambient: "#525252",
 			diffuse: "#FFFFFF",
-			speed: 0.0003
+			speed: 0.0002
 		};
 		var G = {
 			count: 2,
@@ -78,12 +78,8 @@ function Victor(container, anitOut){
 			s();
 			B();
 			v();
-			if (window.innerWidth <= 1200){
-				K(1200, window.innerHeight);
-			} else {
-				K(window.innerWidth, window.innerHeight);
-			}
-			o();
+			K(window.innerWidth, window.innerHeight);
+			o()
 		}
 
 		function F() {
@@ -100,11 +96,7 @@ function Victor(container, anitOut){
 					D = g;
 					break
 			}
-			if (window.innerWidth <= 1200){
-				D.setSize(1200, window.innerHeight);
-			} else {
-				D.setSize(window.innerWidth, window.innerHeight);
-			}
+			D.setSize(window.innerWidth, window.innerHeight);
 			w.appendChild(D.element)
 		}
 
@@ -229,12 +221,21 @@ function Victor(container, anitOut){
 		}
 
 		function j(N) {
-			if (window.innerWidth <= 1200){
-				K(1200, window.innerHeight);
-			} else {
-				K(window.innerWidth, window.innerHeight);
-			}
+			K(window.innerWidth, window.innerHeight);
 			M();
+			t = {
+				width: 0.5 + 1920 / (window.innerWidth * 1.1),
+				height: 1.5,
+				depth: 10,
+				segments: 12,
+				slices: 6,
+				xRange: 0.8,
+				yRange: 0.1,
+				zRange: 1,
+				ambient: "#525252",
+				diffuse: "#FFFFFF",
+				speed: 0.0002
+			};
 		}
 		C();
 	}

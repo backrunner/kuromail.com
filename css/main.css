@@ -12,11 +12,15 @@ body{
     position: absolute;
     background-color: black;
     z-index: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 #background{
     position: absolute;
     width:100%;
     height:100%;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 .main-container{
     width: 100%;
@@ -162,7 +166,7 @@ body{
     }
     .login-panel{
         height:auto;
-        margin-top: 43%;
+        margin-top: 32%;
     }
     .control-layer input{
         width: 320px;
