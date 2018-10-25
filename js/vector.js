@@ -32,13 +32,13 @@ function Victor(container, anitOut){
 			height: 1.5,
 			depth: 10,
 			segments: 12,
-			slices: 6,
-			xRange: 0.8,
-			yRange: 0.1,
+			slices: 7,
+			xRange: 0.4,
+			yRange: 0.2,
 			zRange: 1,
 			ambient: "#525252",
 			diffuse: "#FFFFFF",
-			speed: 0.0002
+			speed: 0.0003
 		};
 		var G = {
 			count: 2,
@@ -78,8 +78,12 @@ function Victor(container, anitOut){
 			s();
 			B();
 			v();
-			K(z.offsetWidth, z.offsetHeight);
-			o()
+			if (window.innerWidth <= 1200){
+				K(1200, window.innerHeight);
+			} else {
+				K(window.innerWidth, window.innerHeight);
+			}
+			o();
 		}
 
 		function F() {
@@ -96,7 +100,11 @@ function Victor(container, anitOut){
 					D = g;
 					break
 			}
-			D.setSize(z.offsetWidth, z.offsetHeight);
+			if (window.innerWidth <= 1200){
+				D.setSize(1200, window.innerHeight);
+			} else {
+				D.setSize(window.innerWidth, window.innerHeight);
+			}
 			w.appendChild(D.element)
 		}
 
@@ -221,8 +229,12 @@ function Victor(container, anitOut){
 		}
 
 		function j(N) {
-			K(z.offsetWidth, z.offsetHeight);
-			M()
+			if (window.innerWidth <= 1200){
+				K(1200, window.innerHeight);
+			} else {
+				K(window.innerWidth, window.innerHeight);
+			}
+			M();
 		}
 		C();
 	}
