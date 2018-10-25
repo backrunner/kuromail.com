@@ -28,7 +28,7 @@ e.c.position[1]),this.context.closePath(),this.context.strokeStyle=f,this.contex
 function Victor(container, anitOut){
 	if (!!document.createElement("canvas").getContext) {
 		var t = {
-			width: 0.5 + 1920 / (window.innerWidth * 1.1),
+			width: 0.5 + 1920 / (window.innerWidth),
 			height: 1.5,
 			depth: 10,
 			segments: 12,
