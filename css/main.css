@@ -3,6 +3,7 @@ body{
     font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
     margin: 0 !important;
     color:white;
+    overflow: hidden;
 }
 /* Page */
 .background-container{
@@ -138,6 +139,9 @@ body{
 }
 
 /* mobile */
+.login-panel-mobile{
+    display: none;
+}
 .mobile-container{
     display: none;
 }
@@ -156,6 +160,29 @@ body{
     letter-spacing: 0.08em;
     font-size:18px;
 }
+#login-title-mobile{
+    margin-top:20px;
+}
+#login-title-mobile span{
+    font-size: 21px;
+}
+.login-tomobile-layer{
+    padding-top:15px;
+}
+.login-tomobile-layer button{
+    width: 280px;
+    height:35px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.login-mobile-logo{
+    width: 100%;
+    text-align: center;
+}
+#logo-mobile{
+    width: 160px;
+    margin-bottom: 18px;
+}
 
 @media (max-width: 1024px) {
     .mobile-container{
@@ -166,7 +193,7 @@ body{
     }
     .login-panel{
         height:auto;
-        margin-top: 28%;
+        margin-top: 42%;
     }
     .control-layer input{
         width: 320px;
@@ -178,43 +205,12 @@ body{
         width: 320px;
     }
 }
-
-@media (max-width: 320px) {
-    .login-panel{
-        height:auto;
-        margin-top: 27%;
+@media (max-width: 540px) {
+    .login-panel-desktop{
+        display: none;
     }
-    #login-title{
-        font-size: 20px;
-    }
-    .login-tabs-item span{
-        font-size: 16px;
-    }
-    .control-layer input{
-        width: 260px;
-    }
-    #input-username{
-        width: 140px;
-    }
-    .login-submit-layer input{
-        width: 260px;
-    }
-    .forgetpassword-layer a{
-        font-size: 14px;
-    }
-    .control-layer label{
-        font-size: 14px;
-    }
-    .control-layer span{
-        font-size: 15px !important;
-    }
-    .control-layer input{
-        font-size: 15px !important;
-    }
-    #username-postfix{
-        margin-left:2px;
-    }
-    .login-submit-layer input{
-        font-size: 15px !important;
+    .login-panel-mobile{
+        display: block;
     }
 }
+
