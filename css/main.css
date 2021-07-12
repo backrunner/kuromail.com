@@ -1,216 +1,210 @@
 /* Overall */
-body{
-    font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
-    margin: 0 !important;
-    color:white;
-    overflow: hidden;
+body {
+  font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+  margin: 0 !important;
+  color: white;
+  overflow: hidden;
 }
+
 /* Page */
-.background-container{
-    width: 100%;
-    height:100%;
-    display: block;
-    position: absolute;
-    background-color: black;
-    z-index: 0;
-    margin: 0 !important;
-    padding: 0 !important;
+.background-container {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  background-color: black;
+  overflow: hidden;
+  z-index: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-#background{
-    position: absolute;
-    width:100%;
-    height:100%;
-    margin: 0 !important;
-    padding: 0 !important;
+#background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-.main-container{
-    width: 100%;
-    height:100%;
-    position: absolute;
-    background-color: transparent;
-    z-index: 100;
-    display:flex;
-    justify-content: center;
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: transparent;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
 }
-.container-left{
-    height:100%;
-    width:auto;
-    padding-right:140px;
-    display:inline-block;
+.container-left {
+  height: 100vh;
+  width: auto;
+  padding-right: 140px;
+  display: inline-block;
 }
-.container-middle{
-    height:100;
-    display:inline-block;
-    width:200px;
+.container-middle {
+  height: 100vh;
+  display: inline-block;
+  width: 200px;
 }
-.container-right{
-    height: 100%;
-    width:auto;
-    display: inline-block;
+.container-right {
+  height: 100vh;
+  width: auto;
+  display: inline-block;
 }
-.login-iframe{
-    width:0px;
-    height:0px;
+.login-iframe {
+  width: 0px;
+  height: 0px;
 }
-#exmail-login{
-    width:0px;
-    height:0px;
+#exmail-login {
+  width: 0px;
+  height: 0px;
 }
+
 /* Left */
-.logo{
-    margin-top:400px;
-    user-select: none;
-    -webkit-user-drag: none;
+.logo {
+  margin-top: 440px;
+  user-select: none;
+  -webkit-user-drag: none;
 }
-#main-logo{
-    width: 350px;
-    user-select: none;
-    -webkit-user-drag: none !important;
+#main-logo {
+  width: 360px;
+  user-select: none;
+  -webkit-user-drag: none !important;
 }
+
 /* Right */
-.login-panel{
-    width:auto;
-    margin-top:230px;
+.login-panel {
+  width: auto;
+  margin-top: 230px;
 }
-.login-form{
-    user-select: none;
-    -webkit-user-drag: none;
+.login-form {
+  user-select: none;
+  -webkit-user-drag: none;
 }
-.login-form span{
-    color:white;
-    font-size:25px;
+.login-form span {
+  color: white;
+  font-size: 25px;
 }
-.login-tabs{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    height:50px;
-    margin-top:26px;
+.login-tabs {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 50px;
+  margin-top: 26px;
 }
-.login-tabs-item{
-    display:block;
-    text-align: center;
+.login-tabs-item {
+  display: block;
+  text-align: center;
 }
-.login-tabs-item span{
-    font-size: 18px;
-    line-height: 50px;
+.login-tabs-item span {
+  font-size: 18px;
+  line-height: 50px;
 }
-.login-tabs-item-selected{
-    border-bottom:white solid 2px;
+.login-tabs-item-selected {
+  border-bottom: white solid 2px;
 }
-.login-tab{
-    margin-top:36px;
-    display:none;
+.login-tab {
+  margin-top: 36px;
+  display: none;
 }
-.login-tab-display{
-    display:block;
+.login-tab-display {
+  display: block;
 }
-.control-layer{
-    margin-bottom:15px;
+.control-layer {
+  margin-bottom: 15px;
 }
-.control-layer label{
-    color:white;
-    font-size:16px;
+.control-layer label {
+  color: white;
+  font-size: 16px;
 }
-.control-layer input{
-    width: 420px;
+.control-layer input {
+  width: 420px;
 }
-.login-submit-layer input{
-    width: 420px;
-    margin-top:12px;
+.login-submit-layer input {
+  width: 420px;
+  margin-top: 12px;
 }
-.forgetpassword-layer{
-    margin-top:24px;
+.forgetpassword-layer {
+  margin-top: 24px;
 }
-.forgetpassword-layer a{
-    color:white;
-    float:right;
+.forgetpassword-layer a {
+  color: white;
+  float: right;
 }
-.forgetpassword-layer  a:hover{
-    color:white;
+.forgetpassword-layer a:hover {
+  color: white;
 }
-#input-username{
-    display: inline-block;
-    width:286px;
+#input-username {
+  display: inline-block;
+  width: 286px;
 }
-#username-postfix{
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 8px;
+#username-postfix {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 8px;
 }
 
 /* mobile */
-.login-panel-mobile{
-    display: none;
+.login-panel-mobile {
+  display: none;
 }
-.mobile-container{
-    display: none;
+#login-title-mobile {
+  text-align: center;
+  margin-top: 18px;
 }
-.mobile-header{
-    position: absolute;
-    top:0px;
-    width: 100%;
-    background: #1e1e1e;
-    box-shadow: 0px 2px rgba(0,0,0,.1);
-    height:45px;
-    text-align: center
+#login-title-mobile span {
+  font-size: 18px;
 }
-.mobile-header span{
-    color: white;
-    line-height: 45px;
-    letter-spacing: 0.08em;
-    font-size:18px;
+.login-tomobile-layer {
+  padding-top: 24px;
 }
-#login-title-mobile{
-    margin-top:20px;
+.login-tomobile-layer button {
+  width: 280px;
+  height: 36px;
+  padding: 0 !important;
+  margin: 0 !important;
 }
-#login-title-mobile span{
-    font-size: 19px;
+.login-mobile-logo {
+  width: 100%;
+  text-align: center;
 }
-.login-tomobile-layer{
-    padding-top:15px;
-}
-.login-tomobile-layer button{
-    width: 280px;
-    height:35px;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-.login-mobile-logo{
-    width: 100%;
-    text-align: center;
-}
-#logo-mobile{
-    width: 160px;
-    margin-bottom: 18px;
+#logo-mobile {
+  width: 192px;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 1024px) {
-    .mobile-container{
-        display: block;
-    }
-    .container-left{
-        display: none;
-    }
-    .login-panel{
-        height:auto;
-        margin-top: 42%;
-    }
-    .control-layer input{
-        width: 320px;
-    }
-    #input-username{
-        width: 188px;
-    }
-    .login-submit-layer input{
-        width: 320px;
-    }
+  .container-left {
+    display: none;
+  }
+  .login-panel {
+    height: auto;
+    margin-top: 320px;
+  }
+  .control-layer input {
+    width: 280px;
+  }
+  #background {
+    width: 200vw;
+  }
+  #input-username {
+    width: 188px;
+  }
+  .login-submit-layer input {
+    width: 320px;
+  }
+}
+@media (max-width: 768px) {
+  .login-panel {
+    margin-top: 96px;
+  }
+  #background {
+    width: 500vw;
+  }
 }
 @media (max-width: 540px) {
-    .login-panel-desktop{
-        display: none;
-    }
-    .login-panel-mobile{
-        display: block;
-    }
+  .login-panel-desktop {
+    display: none;
+  }
+  .login-panel-mobile {
+    display: block;
+  }
 }
-
