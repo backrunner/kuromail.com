@@ -1,9 +1,17 @@
 /* Overall */
+html, body {
+  background-color: #1e1e1e;
+}
+
 body {
   font-family: PingFangSC, DengXian, Microsoft YaHei, Arial, Helvetica, sans-serif !important;
   margin: 0 !important;
   color: white;
   overflow: hidden;
+}
+
+span, p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .375);
 }
 
 /* Page */
@@ -74,7 +82,7 @@ body {
 /* Right */
 .login-panel {
   width: auto;
-  margin-top: 230px;
+  margin-top: 242px;
 }
 .login-form {
   user-select: none;
