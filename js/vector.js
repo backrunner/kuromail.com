@@ -28,12 +28,12 @@ e.c.position[1]),this.context.closePath(),this.context.strokeStyle=f,this.contex
 function Victor(container, anitOut){
 	if (!!document.createElement("canvas").getContext) {
 		var t = {
-			width: document.documentElement.clientWidth <= 767 ? 5 : 3,
+			width: document.documentElement.clientWidth <= 767 ? 5 : 1.75,
 			height: 1.5,
 			depth: 12,
 			segments: 16,
 			slices: 9,
-			xRange: document.documentElement.clientWidth <= 767 ? 0.5 : 0.375,
+			xRange: document.documentElement.clientWidth <= 767 ? 0.5 : 0.175,
 			yRange: 0.15,
 			zRange: 1,
 			ambient: "#525252",
